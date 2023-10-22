@@ -29,14 +29,14 @@ const App = () => {
     <div className="columns is-centered is-vcentered" style={{ minHeight: '100vh' }}>
       <div className="column is-half">
         <div className="has-text-centered">
-          <h1 className="title has-text-light is-size-1">Chat con API de Cohere</h1>
+          <h1 className="title has-text-light is-size-1">Cohere Chat</h1>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="field mt-5">
             <div className="control">
               <input
                 className="input"
-                placeholder="¿Qué queres saber?"
+                placeholder="What do you want to know?"
                 type="text"
                 required
                 onChange={handleChange}
@@ -47,13 +47,13 @@ const App = () => {
           <div className="field mt-5">
             <div className="control has-text-centered">
               <button className="button is-primary" type="submit">
-                Enviar
+                Send
               </button>
             </div>
           </div>
         </form>
         <p className={`custom-paragraph mt-5 ${response || loading ? '' : 'is-hidden'}`}> 
-          {loading ? 'Esperando respuesta...' : response}
+          {loading ? 'Waiting for response...' : response}
         </p>
       </div>
     </div>

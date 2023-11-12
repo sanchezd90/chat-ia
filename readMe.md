@@ -55,7 +55,7 @@ npm start
 2. Start the frontend server by running in the root directory:
 ```js
 cd frontend
-npm start
+npm run dev
 ```
 
 3. Open your web browser and navigate to http://localhost:3000 to access the application.
